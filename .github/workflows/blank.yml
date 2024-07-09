@@ -31,3 +31,11 @@ jobs:
     steps: 
       - name: something
         run: echo something
+
+  test2:
+    runs-on: ubuntu-latest
+    needs: test 
+
+    steps: 
+      - name: other something
+        run: echo other something
